@@ -2,7 +2,7 @@
 
 ### Стэк: Nuxtjs, Axios, Vuex, Vuelidate
 
-### Серверная часть находиться [здесь ](https://github.com/imjivoi/test-work-backend)
+### Серверная часть находиться [здесь](https://github.com/imjivoi/test-work-backend)
 
 # Установка
 
