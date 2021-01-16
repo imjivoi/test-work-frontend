@@ -56,7 +56,6 @@ export const actions = {
     return new Promise(async (resolve, reject) => {
       try {
         const { data } = await this.$axios.post('auth/users/', payload)
-        commit('SET_USER_DATA', data)
         commit('SET_HAS_ACC')
         resolve(data)
         await dispatch('LOGIN', payload)
