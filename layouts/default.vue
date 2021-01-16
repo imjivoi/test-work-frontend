@@ -11,7 +11,7 @@ import Sidebar from '@/components/Sidebar'
 export default {
   components: { Sidebar, Header },
   data: () => ({
-    sidebarOpen: false,
+    sidebarOpen: true,
     screen: null,
   }),
   methods: {
