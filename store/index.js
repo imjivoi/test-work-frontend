@@ -16,6 +16,7 @@ export const mutations = {
   },
   SET_HAS_ACC(state) {
     state.hasAccount = true
+    this.$cookies.set('has_account', payload)
   },
   CLEAR_STATE(state) {
     state.userData = {}
@@ -58,7 +59,7 @@ export const actions = {
         commit('SET_USER_DATA', data)
         commit('SET_HAS_ACC')
         resolve(data)
-        await dispatch('LOGIN')
+        await dispatch('LOGIN', payload)
       } catch (error) {}
       reject(error)
     })
