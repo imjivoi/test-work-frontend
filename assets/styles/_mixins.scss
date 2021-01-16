@@ -1,0 +1,16 @@
+@mixin font {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@mixin block {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 24px 40px;
+  margin: 24px 0 0;
+  max-height: calc(100vh - 160px);
+
+  @media screen and (max-width: 700px) {
+    padding: 24px 16px;
+  }
+}

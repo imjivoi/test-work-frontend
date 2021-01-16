@@ -1,0 +1,61 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+body,
+ul,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    display: block;
+  }
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/*animation*/
+
+.fade-slide-enter-active,
+.fade-slide-leave-active {
+  transition: 0.3s;
+}
+
+.fade-slide-leave-to,
+.fade-slide-enter {
+  opacity: 0;
+  transform: translateX(-300px);
+}
