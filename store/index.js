@@ -16,7 +16,7 @@ export const mutations = {
   },
   SET_HAS_ACC(state) {
     state.hasAccount = true
-    this.$cookies.set('has_account', payload)
+    this.$cookies.set('has_account', true)
   },
   CLEAR_STATE(state) {
     state.userData = {}
